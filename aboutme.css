@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+p {
+  margin: 0;
+}
+.left-section, .right-section {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  z-index: 9999; 
+  background: transparent;
+  color: white; 
+}
+.left-section {
+  left: 0;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+.right-section {
+  right: 0;
+  padding-right: 20px;
+  color: white;
+}
+.right-section ul li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 25px;
+  font-size: 22px;
+  cursor: pointer;
+  color: gray;
+  transition: background-color, padding, border-radius, 0.3s;
+}
+.right-section ul li a.active{
+  background-color: white;
+  padding: 6px 10px;
+  border-radius: 22px;
+}
+.right-section ul li a{
+  text-decoration: none;
+  color: gray;
+}
+.main {
+  display: flex;
+  background-color: black;
+  height: 100vh;
+  margin: 0;
+}
+.about-me {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  clip-path: polygon(0 0, 85% 0, 70% 100%, 0% 100%);
+  background-color: rgb(233, 226, 226);
+  padding-left: 40px;
+}
+.image {
+  flex: 1;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+.icons li {
+  display: inline-block;
+  list-style: none;
+  background-color: rgb(182, 179, 179);
+  padding: 4px 5px;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+.icons li.linkedin {
+  padding: 4px 9px; 
+}
+.icons li:hover{
+  transform: scale(1.2);
+}
+.icons li a {
+  color: black;
+  font-size: 40px;
+}
+.my_photo {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+.salutation {
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+.name {
+  font-weight: bolder;
+  font-size: 42px;
+  margin-bottom: 5px;
+  margin-left: 40px;
+}
+.designation {
+  color: gray;
+  font-size: 28px;
+  margin-bottom: 60px;
+  margin-left: 40px;
+}
+.logo {
+  height: 60px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform, 0.3s;
+}
+.logo:hover{
+  transform: scale(1.2);
+}
+@media (max-width: 1200px) {
+.right-section ul li {
+font-size: 16px;   
+margin-right: 12px; 
+}
+.right-section ul li a.active {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+  }
+.logo {
+height: 45px; 
+}
+.main {
+padding-top: 60px;
+flex-direction: column; 
+height: auto;
+}
+.about-me {
+clip-path: none; 
+padding: 20px;
+text-align: center;
+}
+.salutation,
+.name,
+.designation {
+margin-left: 0; 
+}
+.image {
+justify-content: center;
+padding: 20px;
+}
+.my_photo {
+max-width: 250px; 
+width: 100%;
+height: auto;
+}
+.icons li {
+padding: 6px;
+margin-right: 6px;
+}
+.icons li a {
+font-size: 28px; 
+}
+}
+@media (max-width: 480px) {
+.salutation {
+font-size: 20px;
+margin-bottom: 15px;
+}
+.name {
+font-size: 26px;
+margin-bottom: 8px;
+}
+.designation {
+font-size: 18px;
+margin-bottom: 30px;
+}
+.my_photo {
+max-width: 180px; 
+}
+.icons li a {
+font-size: 22px;
+}
+
+.right-section {
+position: fixed;
+top: 0;
+right: 0;
+width: 100%;
+background-color: black;
+text-align: center;
+padding: 10px 0;
+z-index: 9999;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.right-section ul {
+display: flex;
+justify-content: center;
+padding: 0;
+margin: 0;
+}
+.right-section ul li {
+margin: 0 10px;
+}
+body {
+padding-top: 60px;
+}
+}

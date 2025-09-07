@@ -1,0 +1,127 @@
+.education{
+  height: 100vh;
+  margin-bottom: 0;
+  background-color: black;
+  color: white;
+}
+.page2-heading{
+  padding-top: 65px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  padding-right: 80px;
+}
+.timeline{
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.top-part,
+.bottom-part{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.hr {
+  position: relative;
+  height: 80vh;     
+  width: 5px;    
+  background: white;
+  margin: 0 20px;
+}
+.dot {
+  position: absolute; 
+  width: 15px;
+  height: 15px;
+  background: orangered; 
+  border-radius: 50%;
+  border: 2px solid white; 
+  left: 50%;                 
+  transform: translateX(-50%);
+}
+.class-info{
+  background-color: white;
+  color: black;
+  padding: 10px 12px;
+  border-radius: 4px;
+  transition: transform 0.3s;
+}
+.class-info:hover{
+  transform: scale(1.09);
+}
+.grade{
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.institute{
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+.score{
+  font-size: 24px;
+}
+.year{
+  padding: 20px;
+  font-size: 26px;
+  font-weight: bold;
+}
+.info-10th,
+.year2{
+  margin-left: -75px;
+}
+.year1{
+  margin-right: -75px;
+}
+@media (max-width: 480px) {
+  .education {
+    height: auto;
+    padding: 40px;
+  }
+  .page2-heading {
+    padding-top: 20px;
+    font-size: 24px;
+    padding-right: 20px;
+  }
+  .hr {
+    width: 4px;
+    height: 60vh;
+    margin: 20px 20pxpx;
+  }
+  .dot {
+    width: 12px;
+    height: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .top-part,
+  .bottom-part {
+    flex-direction: column;
+    align-items: center;
+  }
+  .class-info {
+    max-width: 250px;
+    padding: 8px 10px;
+    text-align: center;
+  }
+  .grade {
+    font-size: 20px;
+  }
+  .institute {
+    font-size: 18px;
+  }
+  .score {
+    font-size: 16px;
+  }
+  .year {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .info-10th,
+  .year2,
+  .year1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
