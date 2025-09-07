@@ -75,6 +75,7 @@
   .section-heading{
     margin-bottom: 10px;
   }
+  /*comment*/
   .main-container {
     grid-template-columns: 1fr; 
     row-gap: 20px;
